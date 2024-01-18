@@ -1,0 +1,21 @@
+body{
+    background-color:aquamarine;
+}
+h3{
+    background-color: blueviolet;
+    font-size: 60px;
+}
+p{
+    background-color:beige;
+    border: 50px;
+    padding: 30px;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border-radius: 100px;
+}
+h6{
+    background-color: blue;
+    text-align: justify;
+    font-size: 70px;
+}

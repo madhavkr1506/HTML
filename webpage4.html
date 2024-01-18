@@ -1,0 +1,56 @@
+<!-- css stands for cascading style sheets. 
+it is used to format the layout of a webpage.
+the cascading means that a style applied to a parent element will also apply to all children elements within the parent. 
+
+css can be added to html documents in 3 ways : 
+inline : by using style attribute inside html elements.
+internal : by using style element in the head section.
+external : by using a link element to link to an external css file. 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>webpage4</title>
+        <style>
+            body{
+                background-color: brown;
+            }
+            h2{
+                background-color: bisque;
+                font-size: 50px;
+            }
+            p{
+                text-align: center;
+            }
+        </style>
+        <link rel="stylesheet" href="webpage4.css">
+    </head>
+    <body>
+        <!-- this is the example of inline css -->
+
+        <h1 style="color: rgb(14, 121, 121);">this is most important heading</h1>
+        <p style="background-color: rgb(10, 89, 62);font-size: 50px;">this is a paragraph</p>
+
+        <!-- we are going to use internal css -->
+
+        <h2>this is second most important heading</h2>
+
+        <!-- now we are using external css -->
+
+        <h3>this is third most important heading</h3>
+
+        <!-- note : css color property defines the text color to be used.
+        css font family property defines the font to be used.
+        css font size property defines the text size to be used.
+        css border property defines a border around a html elements.
+        css padding property defines a padding (space) between the text and the border.
+        css margin property defines a margin (space) outside the border.
+        external style sheets can be referenced with a full url or with a path relative to the current web page.
+        -->
+
+        <p>this is madhav kumar and here i an using some css property</p>
+        <h6>this is least important heading</h6>
+    </body>
+</html>
