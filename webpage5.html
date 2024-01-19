@@ -1,0 +1,70 @@
+<!-- html links  : hyperlinks
+html links are hyperlinks.
+Note : a link does not have to be a text. a link can be image or any other html element!
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>webpage5</title>
+        <link rel="stylesheet" href="webpage5.css">
+    </head>
+    <body>
+        <!-- the most important attribute of a element is href attribute, which indicates the link's destination.
+        by default, links will appears as follows in all browsers : 
+    an unvisited link is underlined and blue.
+a visited link is underlined and purple.
+an active link is underlined and red.
+-->
+        <!-- html links : the target attribute
+        by default, the linked page will be displayed in the current browser window. to change this, you must specify another target for the link.
+    target attribute : specifies where to open linked document.
+    _self : default. open the document in the same window/tab as it was clicked.
+    _blank : opens the documents in a new tab or window
+    _parent : open the document in the parent frame.
+    _top : open the document in the full body of the window.
+    
+    
+    -->
+    <a href="https://www.google.com">Open Google</a> <!--this is absolute url (a full web address) in the href attribute.-->
+    <a href="webpage4.html" target="_blank">Open Webpage4</a>  <!--this is relative url(a local link : a link to a page within the same website)-->
+
+    <!-- link : use an image as link
+    just put img tag inside anchor <a> tag -->
+        <a href="webpage3.html"><img src="https://wonderfulengineering.com/wp-content/uploads/2014/10/image-wallpaper-15.jpg" alt="bird image" style="width: 42px; height: 42px;"></a>
+
+        <a href="mailto:madhavkr9153276724@gmail.com">madhav mail id</a> 
+        <!-- use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email)-->
+
+        <!-- button as link :  -->
+        <button onclick="document.location='webpage4.html'">webpage 4</button>
+
+        <!-- link title -->
+        <a href="webpage3.html" title="this is webpage3">webpage3</a>
+
+
+        <!-- link color -->
+
+        <!-- I am using here external css -->
+
+        <a href="webpage4.html" class="link">webpage4</a>
+
+        <!-- create a bookmark in html
+        to create a book mark : first create a bookmark, then add link to it.
+        first use id attribute to create a bookmark, then add link to it.
+        
+        note : we can also add a link to a bookmark on another page.
+        -->
+
+        <p><a href="#h6">jump to heading six</a></p>
+        <h1>this is heading one</h1>
+        <h2>this is heading two</h2>
+        <h3>this is heading three</h3>
+        <h4>this is heading four</h4>
+        <h5>this is heading five</h5>
+        <h6 id="h6">this is heading six</h6>
+        
+
+
+    </body>
+</html>
