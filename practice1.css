@@ -1,0 +1,84 @@
+body{
+    /* background-color: aquamarine; */
+    background-image: url("C:/Users/madha/OneDrive/Pictures/Camera Roll/Wallpaper download/img1.wallspic.com-orange-design-daytime-nature-azure-4096x4096.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: cadetblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+
+}
+
+/* p{
+    text-align: left;
+    font-size: large;
+    font-weight: 100;
+    color: cadetblue;
+} */
+
+.first{
+    color: darkseagreen;
+    text-align: left;
+    font-size: large;
+    font-weight: 100;
+}
+.second{
+    color: burlywood;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+a{
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: blue;
+    display: inline-block;
+}
+a:visited{
+    color: aqua;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+a:active{
+    color: aquamarine;
+    text-decoration: none;
+}
+
+
+table{
+
+    width: 100%;
+}
+table,th,td{
+    
+    border: 5px solid;
+    border-color: aqua;
+    /* border-collapse: collapse; */
+    border-style: solid ;
+}
+th{
+    text-align: center;
+    font-style: italic;
+    height: 50px;
+    background-color: bisque;
+}
+td{
+    border-spacing: 30px;
+    padding: 15px;
+    background-color: cadetblue;
+}
+
+.third{
+    font-style: italic;
+}
