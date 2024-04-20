@@ -1,0 +1,20 @@
+.streamed{
+    background-color: aqua;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.streamed h3{
+    background-color: aquamarine;
+}
+
+.imdb{
+    background-color: bisque;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 20px;
+}
+.imdb h3{
+    background-color: palegreen;
+}

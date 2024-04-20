@@ -1,0 +1,30 @@
+/* h1{
+    background-color: aqua;
+    text-align: center;
+} */
+
+/* style element on the basis of tag name */
+/* p{
+    text-align: left;
+    font-size: 20px;
+    background-color: lightcoral;
+} */
+
+/* when we have to style element on the basis of heading we use # symbol */
+#heading{
+    background-color: aqua;
+    text-align: center;
+}
+
+/* style element on the basis of class we use .(dot) symbol */
+
+.Class1{
+    text-align: left;
+    font-size: 20px;
+    background-color: bisque;
+}
+
+button{
+    background-color: burlywood;
+    
+}

@@ -1,0 +1,25 @@
+.streamed{
+    background-color: bisque;
+    border: 2px solid black;
+    height: fit-content;
+    width: fit-content;
+    color: black;
+}
+
+.streamed h3{
+    background-color: aqua;
+}
+
+
+.streaming{
+    background-color: black;
+    border: 2px solid bisque;
+    height: fit-content;
+    width: fit-content;
+    color: bisque;
+}
+
+.streaming h3{
+    background-color: blue;
+
+}

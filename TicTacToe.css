@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #092327;
+    color: antiquewhite;
+    text-align: center;
+    
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.game{
+    margin-top: 5vmin;
+    height: 60vmin;;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: 2.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 8vmin;
+    justify-content: center;
+    box-shadow: 5px 10px black;
+    border-radius: 1rem;
+    background-color: bisque;
+    color: rgb(1, 37, 1);
+
+}
+
+.reset-btn{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #092327;
+    color: bisque;
+}
+
+
+.winnerCount{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: bisque;
+    justify-content: center;
+    display: flex;
+    color: #092327;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.new-btn{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #092327;
+    color: bisque;
+}
+
+
+/*
+ * Copyright [2024] [Madhav Kumar]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
