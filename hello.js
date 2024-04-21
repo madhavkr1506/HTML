@@ -21,7 +21,7 @@ let rightRotate = () =>{
 
 let buttonX = document.querySelectorAll(".btnX");
 // console.log(buttonX)
-let turnX = true;
+let turnX = false;
 buttonX.forEach((btn) => {
     btn.addEventListener("click", () => {
         if(turnX){
@@ -31,7 +31,7 @@ buttonX.forEach((btn) => {
             }
             else if(btn.innerText == 2){
                 btn.innerText = GameArray[btn.innerText - 1];
-                rightRotate();
+                leftRotate();
             }
             else if(btn.innerText == 3){
                 btn.innerText = GameArray[btn.innerText - 1];
@@ -47,13 +47,13 @@ buttonX.forEach((btn) => {
 
 let buttonY = document.querySelectorAll(".btnY");
 // console.log(buttonX)
-let turnY = true;
+let turnY = false;
 buttonY.forEach((btn) => {
     btn.addEventListener("click", () => {
         if(turnY){
             if(btn.innerText == 1){
                 btn.innerText = GameArray[btn.innerText - 1];
-                leftRotate();
+                rightRotate();
             }
             else if(btn.innerText == 2){
                 btn.innerText = GameArray[btn.innerText - 1];
@@ -61,7 +61,7 @@ buttonY.forEach((btn) => {
             }
             else if(btn.innerText == 3){
                 btn.innerText = GameArray[btn.innerText - 1];
-                leftRotate();
+                rightRotate();
             }
             turnY = false;
         }
@@ -78,7 +78,7 @@ let resetGame = () => {
     for(let btn of buttonX){
         btn.innerText = index;
         index++;
-        turnX = true;
+        // turnX = true;
     }
 
     index = 1;
@@ -86,8 +86,28 @@ let resetGame = () => {
     for(let btn of buttonY){
         btn.innerText = index;
         index++;
-        turnY = true;
+        // turnY = true;
     }
 }
 
 resetButton.addEventListener("click",resetGame);
+
+let X = document.getElementById("X");
+
+X.addEventListener("click", () => {
+    if(X.innerText == "Player X"){
+        turnX = true;
+    }
+});
+
+
+let Y = document.getElementById("Y");
+
+Y.addEventListener("click", () => {
+    if(Y.innerText == "Player Y"){
+        turnY = true;
+    }
+});
+
+
+

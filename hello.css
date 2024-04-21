@@ -48,10 +48,11 @@ body{
     text-align: center;
 }
 
-#resetbtn{
+#resetbtn,#X,#Y{
     padding: 2rem;
     border-radius: 1rem;
     background-color: burlywood;
     box-shadow: 4px 8px blue;
     color: rgb(14, 2, 77);
+    margin: 20px;
 }
