@@ -31,10 +31,71 @@ date.forEach((d) => {
     }
 });
 
-// code to check any date for an event
-date.forEach((d) => {
-    d.addEventListener("click",()=>{
-        console.log(`Date ${d.innerText} was checked`);
-    });
+
+// lets give unique id to each date
+let dateId = 1;
+date.forEach((date) => {
+    date.id = "date"+dateId;
+    dateId++;
 });
+
+// let textareas = [];
+// date.forEach((date) => {
+//     let dateid = date.id.replace("date","");
+//     let textarea = document.createElement("textarea");
+//     textarea.style.display = "none";
+//     textarea.placeholder = "Add Event : "
+//     textarea.id = "textarea"+dateid;
+//     textareas.push(textarea);
+//     date.addEventListener("click",()=>{
+//         textareas.forEach((textarea) =>{
+//             textarea.style.display = "none";
+//         })
+//         if(!date.contains(textarea)){
+//             date.appendChild(textarea);
+//             textarea.style.display = "block";
+//         }
+//     });
+//     textarea.addEventListener("blur",()=>{
+//         textarea.style.display = "none";
+//     })
+// });
+
+// add textarea to each date and also assign ubique textarea id
+
+date.forEach((date) => {
+    let dateid = date.id.replace("date","");
+    let textarea = document.createElement("textarea");
+    textarea.style.display = "none";
+    textarea.placeholder = "Add Event : ";
+    textarea.id = dateid;
+    date.addEventListener("click",()=>{
+        document.querySelectorAll("textarea").forEach((element) => {
+            if(element.id !== textarea.id){
+                element.style.display = "none";
+            }
+        });
+        if(!date.contains(textarea)){
+            date.appendChild(textarea);
+            textarea.style.display = "block";
+        }
+        else{
+            textarea.style.display = "block";
+        }
+    });
+    textarea.addEventListener("blur",() => {
+        textarea.style.display = "none";
+    });
+    
+});
+
+
+
+
+
+
+
+
+
+
 
