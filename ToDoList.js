@@ -69,6 +69,12 @@ date.forEach((date) => {
     textarea.style.display = "none";
     textarea.placeholder = "Add Event : ";
     textarea.id = dateid;
+
+    let savedtext = localStorage.getItem(dateid);
+    if(savedtext){
+        textarea.value = savedtext;
+    }
+    
     date.addEventListener("click",()=>{
         document.querySelectorAll("textarea").forEach((element) => {
             if(element.id !== textarea.id){
@@ -84,6 +90,7 @@ date.forEach((date) => {
         }
     });
     textarea.addEventListener("blur",() => {
+        localStorage.setItem(dateid,textarea.value);
         textarea.style.display = "none";
     });
     
