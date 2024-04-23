@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- html form element is used to create an html form for user input -->
+
+    <!-- <form> -->
+        <!-- <label for="First_Name">First Name</label>
+        <input type="text", id="First_Name", name="First_Name" value="Madhav Kumar">
+        <br><input type="submit" value="submit"> -->
+
+        <!-- name attribute in input field : the value of input field will not be sent at all, if name attribute is omitted. -->
+
+        <!-- the action attribute defines the action to be performed when the form is submitted. -->
+        <!-- action_page.php : this file contain a server side script that handles the data form -->
+
+
+    <!-- </form> -->
+
+    <!-- <form action="/action_page.php" method="post" autocomplete="on">
+
+        <label for="First_Name"> First Name : </label><br>
+        <input type="text" id="First_Name" name="First_Name" value="Madhav Kumar"><br>
+        <input type="submit" value="Submit">
+    </form> -->
+
+    <!-- if action attribute is omitted, the action is set to the current page -->
+
+    <!-- the target attribute  specifies where to display the response that is received after submitting the form
+    _blank : the response is delayed in a new window or tab
+    _self : the response is displayed in the current window
+    _parent : the response is displayed in the parent frame
+    _top : the response is displayed in the full body of the window
+    framename : the response is displayed in a named iframe
+
+    method attribute : 
+    it specifies the http method to be used when submitting the form data.
+    the form data can be sent as url variable with get method or as http post transaction with post method.
+    the default method when submitting form data is get.
+
+    never use get to send sensitive data. (submitted form is visible in url)
+
+    the length of url is limited (2048 characters)
+
+    post has no size limitations, it append the form data inside the body of the http request.
+
+    autocomplete attribute : whether a form should have autocomplete on or off.
+    it completes the values based on values that the user has entered before.
+
+
+    the for attribute of label tag should be equal to the id attribute of the input element to bind them together
+
+    select element : it defines a drop down list
+
+    
+
+
+    -->
+    
+    <!-- <form action="/action_page.php" method="post">
+        <label for="name">Your Name : </label>
+        <select name="name" id="name" size="3">
+            <option value="Madhav">Madhav Kumar</option>
+            <option value="Rahul">Rahul Kumar</option>
+            <option value="Rohan">Rohan Singh</option>
+            <option value="Krishna">Krishna</option>
+            <option value="Kishan" selected>Kishan Kumar</option>
+        </select>
+    </form> -->
+
+    <!-- option element defines an option that can be selected, by default the first item in the drop down list is selected
+    to define a pre-selected option, add the selected attribute to the option -->
+
+    <!-- the size attribute specifies the number of visible values 
+    use multiple attribute allow user to select more than one value
+
+    the textarea element defines a multi-line input field : 
+
+    the fieldset element is used to group the related data in a from
+    the legend element defines a caption for the fieldset element 
+
+    -->
+
+    <!-- <textarea name="message" cols="30" rows="10">the cat was playing in the garden</textarea>
+
+    <button type="button" onclick="alert('hello world!')"> Click Me</button> -->
+
+
+    <!-- the datalist element specifies a list of pre-defined options for an input element.
+    the list attribute of the input element, must refer to the id attribute of datalist element
+ -->
+
+ <!-- <form action="/action_page.php">
+    <input list="Name">
+    <datalist id="Name">
+        <option value="Madhav">
+        <option value="Kishan">
+    </datalist>    
+ </form> -->
+
+
+ <form action="/action_page.php">
+    <!-- <label for="name">Name</label>
+    <input type="text" id="name" name="name"> -->
+
+    <!-- <label for="color">Color</label>
+    <input type="color" id="color" name="color"> -->
+
+
+    <!-- <label for="pwd">Password</label>
+    <input type="password" name="pwd" id="pwd"> -->
+
+    <!-- <label for="numRange">Number Range</label>
+    <input type="range" name="numRange" id="numRange" value="100"> -->
+
+    <!-- <label for="mon">Month</label>
+    <input type="month" id="mon" name="mon"> -->
+
+    <!-- <label for="dateType">Enter Date</label>
+    <input type="date" id="dateType" name="dateType"> -->
+    <!-- you can also add min max attribute to set restriction on date -->
+
+    <!-- <label for="localDateTime">localDateTime</label>
+    <input type="datetime-local" id="localDateTime" name="localDateTime"> -->
+
+    <!-- <label for="Email">Enter your Email : </label>
+    <input type="email" id="Email" name="Email"> -->
+
+
+    <!-- and there are many more input type like hidden, file, image, number, radio, checkbox, submit, reset time, text, week, button and etc -->
+
+
+    <!-- input attributes are : value, readonly, max, min, size, maxlength, multiple, pattern, placeholder(it gives us hint that describe expected value), required, step(work with number, range, date, datetime-local, month, time, week) , height, width, autofocus, list, autocomplete -->
+        <!-- html input form attribute : 
+        formaction attribute, formenctype attribute, formmethod, formtarget, formnovalidate, -->
+ </form>
+
+
+
+</body>
+</html>
